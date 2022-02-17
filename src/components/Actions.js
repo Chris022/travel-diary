@@ -2,7 +2,9 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 
-export default function Actions() {
+import AddIcon from '@mui/icons-material/Add';
+
+export default function Actions({addCountry}) {
     return (
         <SpeedDial
             ariaLabel="SpeedDial basic example"
@@ -10,10 +12,8 @@ export default function Actions() {
             icon={<SpeedDialIcon />}
         >
             <SpeedDialAction
-                key={"Test"}
-                onClick={() => {
-                    //setPos(map.getCenter());
-                }}
+                icon={<AddIcon/>}
+                onClick={addCountry}
             />
         </SpeedDial>
     )
