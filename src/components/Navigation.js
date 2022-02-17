@@ -12,9 +12,8 @@ export default function Navigation({ page, setPage }) {
                     setPage(newValue);
                 }}
             >
-                <BottomNavigationAction label="Recents" />
-                <BottomNavigationAction label="Favorites" />
-                <BottomNavigationAction label="Archive" />
+                <BottomNavigationAction label="Map" />
+                <BottomNavigationAction label="Overview" />
             </BottomNavigation>
         </Paper>
     )
